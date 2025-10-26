@@ -1,0 +1,19 @@
+.btn-link {
+  color: #fff;
+  background-color: var(--color-background-2);
+  font-size: 16px;
+  padding: 15px 25px;
+  display: inline-flex;
+  align-items: center; /* Выравнивание по вертикали */
+  gap: 10px; /* Расстояние между текстом и стрелкой */
+  border-radius: 1px;
+}
+
+/* Убедитесь, что ссылка тоже использует flex */
+.btn-link a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}

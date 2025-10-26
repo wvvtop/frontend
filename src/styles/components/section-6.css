@@ -1,0 +1,48 @@
+@media (--xl-viewport) {
+  .section-6 {
+    padding: 115px 165px;
+  }
+}
+
+.section-6__container {
+  background-color: var(--color-background-1);
+  padding-top: 119px;
+  padding-bottom: 116px;
+  padding-left: 95px;
+}
+
+.section-6__image {
+  min-width: 380px;
+  min-height: 420px;
+}
+
+.section-6__text {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.section-6__content {
+  gap: 47px;
+  display: flex;
+}
+
+.section-6__title {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.section-6__description {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 124%;
+  letter-spacing: -0.02em;
+}
+
+.section-6__about svg {
+  display: inline-block;
+}
+
+.section-6__link {
+  color: var(--color-links);
+}

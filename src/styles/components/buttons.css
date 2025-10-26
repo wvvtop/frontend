@@ -1,0 +1,33 @@
+.btn-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 160px; /* гарантируем, что не на всю ширину */
+}
+
+.btn-play svg {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-play:hover {
+  opacity: 0.8;
+}
+
+.button-navigation button {
+  border: 0;
+  padding: 16.5px;
+  background: var(--color-background-1);
+  border-radius: 100%;
+}
+
+.button-navigation {
+  display: flex;
+  gap: 15px;
+}

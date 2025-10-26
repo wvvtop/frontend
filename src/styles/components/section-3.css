@@ -1,0 +1,70 @@
+@media (--xl-viewport) {
+  .section-3 {
+    padding: 100px 120px;
+  }
+}
+
+.section-3__photo {
+  flex: 0 0 400px;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.section-3__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1; /* фото ниже overlay и текста */
+  position: relative;
+  border-radius: 3px;
+}
+
+/* затемнение */
+.section-3__photo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+  opacity: 0.5; /* регулирует степень затемнения */
+  z-index: 2; /* overlay над фото */
+  border-radius: 3px;
+}
+
+/* текст поверх overlay */
+.section-3__photo p {
+  position: absolute;
+  bottom: 31px;
+  left: 29px;
+  width: 50%;
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+  z-index: 3; /* текст поверх overlay */
+  border-radius: 3px;
+}
+
+.section-3__container {
+  display: flex;
+  gap: 164px;
+}
+
+.section-3__title {
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  line-height: 119%;
+}
+
+.section-3__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-3__subtitle {
+  font-size: 20px;
+}

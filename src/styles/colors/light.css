@@ -3,4 +3,18 @@
 
   --color-primary: var(--color-white);
   --color-secondary: var(--color-black);
+  --color-background-1: #e7ebfc;
+  --color-background-2: #2e4fd7;
+  --color-background-footer: #052825;
+  --color-links: #2e4fd7;
+}
+
+/* Сбросьте фильтры для светлой темы */
+.section-4__icon,
+.navbar__logo-image,
+.btn-link img,
+.section-6__logo-logitech,
+.section-7__icon,
+.companies img {
+  filter: var(none);
 }

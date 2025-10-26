@@ -6,17 +6,444 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
 
-    <style media="(prefers-color-scheme: light)">
+    <style id="light-theme">
       @import url('./src/styles/colors/light.css');
     </style>
-    <style media="(prefers-color-scheme: dark)">
+    <style id="dark-theme">
       @import url('./src/styles/colors/dark.css');
     </style>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__left">
+            <div class="navbar__logo">
+              <img src="public/images/icon.svg" alt="Заголовок" class="navbar__logo-image" />
+              <span class="navbar__logo-text">Tweakful</span>
+            </div>
 
-    <p>Hello world</p>
+            <button class="navbar__toggle" aria-label="Меню">☰</button>
 
+            <ul class="navbar__menu">
+              <li class="navbar__menu-item"><a href="">Home</a></li>
+              <li class="navbar__menu-item"><a href="">Features</a></li>
+              <li class="navbar__menu-item"><a href="">Pricing</a></li>
+              <li class="navbar__menu-item"><a href="">About Us</a></li>
+              <li class="navbar__menu-item"><a href="">Help</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="navbar__theme-toggle">🌙</button>
+          </div>
+          <div class="btn-navbar btn-link">
+            <a href="">
+              Book A Meeting
+              <img src="public/images/link-arrow-right.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-1">
+      <div class="section-1__container">
+        <p class="section-1__main-text">
+          We have created a big library of illustrations with custom style and action types.
+        </p>
+        <em class="section-1__quote">
+          “E-commerce Illustration Pack collects different ways to do quick shopping, pay in a second, and get all those
+          stuff you need. There are smart delivery and polite service in the scenes. Each of them is realized in cold
+          and warm colors with”
+        </em>
+        <div class="section-1__human">
+          <img src="public/images/experts-photo.svg" alt="фото эксперта" />
+          <div class="section-1__human-info">
+            <p class="section-1__human-name">Jesica Kumari</p>
+            <small class="section-1__human-role">CEO Of Acme Limited</small>
+          </div>
+        </div>
+
+        <div class="section-1__btn btn-link">
+          <a href="">
+            Explore More About This
+            <img src="public/images/link-arrow-right.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="section-2__container">
+        <header class="section-2__header">
+          <h1 class="section-2__title">Some count that matters</h1>
+          <small class="section-2__subtitle"> Our achievement in the journey depicted in numbers </small>
+        </header>
+
+        <ul class="section-2__info">
+          <li class="section-2__info-item">
+            <h1 class="section-2__info-number">5</h1>
+            <small class="section-2__info-label">Service Geographics</small>
+          </li>
+          <li class="section-2__info-item">
+            <h1 class="section-2__info-number">30</h1>
+            <small class="section-2__info-label">Fortune 500 Clients</small>
+          </li>
+          <li class="section-2__info-item">
+            <h1 class="section-2__info-number">300</h1>
+            <small class="section-2__info-label">Dedicated Members</small>
+          </li>
+          <li class="section-2__info-item">
+            <h1 class="section-2__info-number">8</h1>
+            <small class="section-2__info-label">Years of Journey</small>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="section-3__container">
+        <div class="section-3__photo">
+          <div class="section-3__image image-wrapper">
+            <img src="public/images/photo1.svg" alt="фото человека" />
+            <div class="overlay"></div>
+            <p>Video store with 10 samples on 20 min</p>
+          </div>
+        </div>
+        <div class="section-3__text">
+          <header>
+            <h1 class="section-3__title">Headline of Modern and Digital Lending Platform In a Few Seconds for You</h1>
+          </header>
+          <p class="section-3__subtitle">
+            Nowadays, it isn't uncommon to see lenders rapidly adopting a digital lending strategy to streamline the
+            lending process Gorgeous, high-quality design system for mobile, tablet & a few reasons digital
+          </p>
+          <button class="section-3__button btn-play">
+            <!-- Использование -->
+            <svg width="48" height="48">
+              <use href="#icon-play"></use>
+            </svg>
+            Play Tutorial
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="section-4__container">
+        <div class="section-4__text">
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-1.svg" alt="" />
+            <h1 class="section-4__title">First Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-2.svg" alt="" />
+            <h1 class="section-4__title">Second Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-3.svg" alt="" />
+            <h1 class="section-4__title">Third Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-4.svg" alt="" />
+            <h1 class="section-4__title">Fourth Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-5.svg" alt="" />
+            <h1 class="section-4__title">Fifth Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+
+          <div class="section-4__item">
+            <img class="section-4__icon" src="public/images/grid-6.svg" alt="" />
+            <h1 class="section-4__title">Sixth Feature</h1>
+            <small class="section-4__subtitle">
+              Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons
+            </small>
+          </div>
+        </div>
+        <div class="section-4__photo">
+          <img src="public/images/rocket.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-5">
+      <div class="section-5__container">
+        <a class="section-5__link" href="">Meet Our Leadership</a>
+        <header class="section-5__header">
+          <h1 class="section-5__title">
+            Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline
+          </h1>
+          <div class="section-5__buttons button-navigation">
+            <button>
+              <svg width="32" height="32">
+                <use href="#arrow-left"></use>
+              </svg>
+            </button>
+            <button>
+              <svg width="32" height="32">
+                <use href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="section-5__info info">
+          <div>
+            <img class="section-5__photo" src="" alt="" />
+            <h1 class="section-5__name">Samuel Willson</h1>
+            <p class="section-5__role">Digital Artist</p>
+          </div>
+          <div>
+            <img class="section-5__photo" src="" alt="" />
+            <h1 class="section-5__name">Angelina Hellhop</h1>
+            <p class="section-5__role">Digital Artist</p>
+          </div>
+          <div>
+            <img class="section-5__photo" src="" alt="" />
+            <h1 class="section-5__name">SKyle Generale</h1>
+            <p class="section-5__role">Digital Artist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6">
+      <div class="section-6__container">
+        <div class="section-6__content">
+          <div class="section-6__text">
+            <h1 class="section-6__title">Success Story</h1>
+            <p class="section-6__description">
+              Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the
+              lending process
+            </p>
+            <div class="section-6__about">
+              <img class="section-6__logo-logitech" src="public/images/logitech.svg" alt="logitech" />
+              <a class="section-6__link" href="">
+                Read Complete Case Study
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z" fill="#2E4FD7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="section-6__image">
+            <img src="public/images/human-2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-7">
+      <div class="section-7__container">
+        <header class="section-7__header">
+          <h1 class="section-7__title">How it works</h1>
+        </header>
+        <div class="section-7__content">
+          <div class="section-7__step">
+            <img class="section-7__icon" src="public/images/section-7_1.svg" alt="" />
+            <div class="section-7__step-text">
+              <h1 class="section-7__step-title">Create your site</h1>
+              <p class="section-7__step-description">Create an account to get started.</p>
+            </div>
+          </div>
+
+          <div class="section-7__step">
+            <img src="public/images/section-7_2.svg" alt="" />
+            <div class="section-7__step-text">
+              <h1 class="section-7__step-title">Add Contents</h1>
+              <p class="section-7__step-description">Add contents and pages to your site.</p>
+            </div>
+          </div>
+
+          <div class="section-7__step">
+            <img src="public/images/section-7_3.svg" alt="" />
+            <div class="section-7__step-text">
+              <h1 class="section-7__step-title">Publish</h1>
+              <p class="section-7__step-description">Now publish to make your site live!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-8">
+      <div class="section-8__container">
+        <header class="section-8__header">
+          <h1 class="section-8__title">The Is Closing Headline To Make A Impact For Call To Action</h1>
+        </header>
+        <div class="u-space-25"></div>
+        <div>
+          <p class="section-8__description">
+            Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the
+            lending process nowadays, it isn’t uncommon to see lenders rapidly
+          </p>
+        </div>
+        <div class="u-space-60"></div>
+        <div class="section-8__button btn-link">
+          <a href="">
+            Book A Meeting
+            <img src="public/images/link-arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div class="u-space-40"></div>
+        <hr />
+        <div class="u-space-50"></div>
+
+        <div class="section-8__companies companies">
+          <img src="public/images/philips.svg" alt="" />
+          <img src="public/images/logitech.svg" alt="" />
+          <img src="public/images/amazon.svg" alt="" />
+          <img src="public/images/facebook.svg" alt="" />
+          <img src="public/images/google.svg" alt="" />
+          <img src="public/images/linkedin.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <header>
+          <h1 class="footer__header">Tweakful</h1>
+        </header>
+        <div class="u-space-33"></div>
+
+        <div class="footer__main_info">
+          <div class="footer__main_info-left">
+            <h1>About Tweakful</h1>
+            <div class="u-space-8"></div>
+            <p>Tweakful is HubSpot Theme Based On Engagement Design Framework, designed & developed by Openthrive.</p>
+            <div class="u-space-8"></div>
+            <a href="">
+              Button Text
+              <img src="public/images/link-arrow-right.svg" alt="" style="display: inline-block" />
+            </a>
+          </div>
+          <div class="footer__main_info-right">
+            <ul class="footer__links-1">
+              <li>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <a href="">Career</a>
+              </li>
+              <li>
+                <a href="">Privacy Plocy</a>
+              </li>
+              <li>
+                <a href="">Terms Of Services</a>
+              </li>
+              <li>
+                <a href="">GDPR</a>
+              </li>
+            </ul>
+            <div class="u-space-33"></div>
+
+            <ul class="footer__links-2">
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Capabilities</a>
+              </li>
+              <li>
+                <a href="">Resources</a>
+              </li>
+              <li>
+                <a href="">Partnership Integration </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="u-space-33"></div>
+        <hr />
+        <div class="u-space-33"></div>
+
+        <div class="footer__additional">
+          <p class="footer__additional-left">
+            B2B website and engagement design solution that transform marketing and sales performance like never before.
+          </p>
+          <p class="footer__additional-right">© 2015-2020 Openthrive. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="arrow-left" viewBox="0 0 32 32">
+        <rect opacity="0.01" x="32" width="32" height="32" transform="rotate(90 32 0)" fill="none" />
+        <path
+          d="M25.3335 14.6667L9.52016 14.6667L14.3602 8.85341C14.8314 8.28639 14.7538 7.44469 14.1868 6.97341C13.6198 6.50212 12.7781 6.57973 12.3068 7.14674L5.64016 15.1467C5.59531 15.2104 5.5552 15.2772 5.52016 15.3467C5.52016 15.4134 5.52016 15.4534 5.42683 15.5201C5.36639 15.673 5.33475 15.8357 5.3335 16.0001C5.33475 16.1645 5.36639 16.3272 5.42683 16.4801C5.42683 16.5467 5.42683 16.5867 5.52016 16.6534C5.5552 16.7229 5.59531 16.7898 5.64016 16.8534L12.3068 24.8534C12.5606 25.1581 12.9369 25.3341 13.3335 25.3334C13.645 25.334 13.9469 25.2255 14.1868 25.0267C14.4595 24.8007 14.631 24.4754 14.6635 24.1227C14.6961 23.77 14.5869 23.4188 14.3602 23.1467L9.52016 17.3334L25.3335 17.3334C26.0699 17.3334 26.6668 16.7365 26.6668 16.0001C26.6668 15.2637 26.0699 14.6667 25.3335 14.6667Z"
+          fill="var(--color-secondary)"
+        />
+      </symbol>
+
+      <symbol id="arrow-right" viewBox="0 0 32 32">
+        <rect opacity="0.01" y="32" width="32" height="32" transform="rotate(-90 0 32)" fill="none" />
+        <path
+          d="M6.66651 17.3333L22.4798 17.3333L17.6398 23.1466C17.1686 23.7136 17.2462 24.5553 17.8132 25.0266C18.3802 25.4979 19.2219 25.4203 19.6932 24.8533L26.3598 16.8533C26.4047 16.7896 26.4448 16.7228 26.4798 16.6533C26.4798 16.5866 26.4798 16.5466 26.5732 16.4799C26.6336 16.327 26.6652 16.1643 26.6665 15.9999C26.6652 15.8355 26.6336 15.6728 26.5732 15.5199C26.5732 15.4533 26.5732 15.4133 26.4798 15.3466C26.4448 15.2771 26.4047 15.2102 26.3598 15.1466L19.6932 7.14659C19.4394 6.84187 19.0631 6.66595 18.6665 6.66659C18.355 6.66598 18.0531 6.77448 17.8132 6.97326C17.5405 7.19932 17.369 7.52459 17.3365 7.8773C17.3039 8.23 17.4131 8.58115 17.6398 8.85326L22.4798 14.6666L6.66651 14.6666C5.93013 14.6666 5.33317 15.2635 5.33317 15.9999C5.33317 16.7363 5.93013 17.3333 6.66651 17.3333Z"
+          fill="var(--color-secondary)"
+        />
+      </symbol>
+
+      <symbol id="icon-play" viewBox="0 0 48 48">
+        <!-- Круг -->
+        <circle
+          cx="24"
+          cy="24"
+          r="23"
+          stroke="var(--color-secondary)"
+          stroke-width="2"
+          stroke-linejoin="round"
+          fill="none"
+        />
+
+        <!-- Треугольник Play, центрированный в круге -->
+        <g transform="translate(11 11)">
+          <rect
+            opacity="0.01"
+            x="26"
+            y="26"
+            width="26"
+            height="26"
+            transform="rotate(-180 26 26)"
+            fill="var(--color-secondary)"
+          />
+          <path
+            d="M8.66673 17.5608L8.66673 8.43911C8.66567 7.70413 9.08714 7.03399 9.75006 6.71661C10.5364 6.34521 11.4656 6.45453 12.1442 6.99828L17.6692 11.5591C18.0871 11.9213 18.3271 12.447 18.3271 12.9999C18.3271 13.5529 18.0871 14.0786 17.6692 14.4408L12.1442 19.0016C11.4656 19.5454 10.5364 19.6547 9.75006 19.2833C9.08714 18.9659 8.66567 18.2958 8.66673 17.5608Z"
+            fill="var(--color-secondary)"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <script type="module" src="/src/scripts/navbar.js"></script>
+    <script type="module" src="/src/scripts/theme-swithcher.js"></script>
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

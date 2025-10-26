@@ -1,0 +1,35 @@
+@media (--xl-viewport) {
+  .section-8 {
+    padding: 100px 165px;
+  }
+}
+
+.section-8 {
+  background-color: var(--color-background-1);
+  text-align: center;
+}
+
+.section-8__companies {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-8__title {
+  font-weight: 700;
+  font-size: 52px;
+  max-width: 920px;
+  margin: 0 auto;
+  line-height: 119%;
+  letter-spacing: -0.02em;
+}
+
+.section-8__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: -0.02em;
+  max-width: 826px;
+  margin: 0 auto;
+}

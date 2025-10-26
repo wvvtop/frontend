@@ -3,4 +3,13 @@
 
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
+  --color-background-1: #121317; /* основной фон страницы */
+  --color-background-2: #435fd2; /* акцентный цвет, можно оставить такой же, если яркий */
+  --color-background-footer: #052825; /* тёмный фон футера */
+  --color-links: #4da1ff; /* ссылки на тёмном фоне */
+}
+
+/* Инвертируем иконки для темной темы */
+.section-4__icon {
+  filter: invert(1) brightness(10) contrast(100);
 }

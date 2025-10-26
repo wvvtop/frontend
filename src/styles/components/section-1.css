@@ -1,0 +1,55 @@
+.section-1 {
+  background-color: var(--color-background-1);
+}
+
+@media (--xl-viewport) {
+  .section-1__container {
+    max-width: 923px;
+  }
+
+  .section-1 {
+    padding-top: 134px;
+    padding-left: 111px;
+    padding-bottom: 99px;
+  }
+
+  /* .section-1 {
+    padding: 134px 406px 99px 111px;
+  } */
+}
+
+.section-1__main-text {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  margin-bottom: 31px;
+}
+
+.section-1__quote {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.section-1__human {
+  margin: 36px 0;
+  display: flex;
+  gap: 24px;
+}
+
+.section-1__human-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-1__human-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-1__human-role {
+  font-size: 16px;
+  font-weight: 400;
+}

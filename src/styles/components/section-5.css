@@ -1,0 +1,51 @@
+@media (--xl-viewport) {
+  .section-5 {
+    padding: 100px 165px;
+  }
+}
+
+.section-5__link {
+  color: var(--color-links);
+  font-size: 24px;
+}
+
+.section-5__title {
+  font-weight: 700;
+  font-size: 42px;
+  display: inline-block;
+  max-width: 730px;
+}
+
+.section-5__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-5__info {
+  padding-top: 50px;
+  display: flex;
+}
+
+.section-5__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-5__role {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-5__photo {
+  display: block;
+  width: 350px;
+  height: 380px;
+  border-radius: 3px;
+  background-color: var(--color-background-1); /* серый фон как заглушка */
+  object-fit: cover;
+}
+
+.section-5__info > * {
+  flex: 1;
+}

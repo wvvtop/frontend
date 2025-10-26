@@ -1,0 +1,28 @@
+@media (--xl-viewport) {
+  .section-4 {
+    padding: 128px 120px;
+  }
+
+  .section-4__container {
+    display: flex;
+    gap: 100px;
+  }
+}
+
+.section-4__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px 60px;
+  flex: 40%;
+}
+
+.section-4__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-4__subtitle {
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.02em;
+}
