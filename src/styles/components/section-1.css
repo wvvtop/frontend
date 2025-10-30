@@ -1,39 +1,22 @@
 .section-1 {
   background-color: var(--color-background-1);
-}
-
-@media (--xl-viewport) {
-  .section-1__container {
-    max-width: 923px;
-  }
-
-  .section-1 {
-    padding-top: 134px;
-    padding-left: 111px;
-    padding-bottom: 99px;
-  }
-
-  /* .section-1 {
-    padding: 134px 406px 99px 111px;
-  } */
+  transition: padding 0.3s ease; /* плавное сжатие */
 }
 
 .section-1__main-text {
-  font-size: 64px;
+  font-size: 2.9rem;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 112%;
   letter-spacing: -0.02em;
-  margin-bottom: 31px;
 }
 
 .section-1__quote {
-  font-size: 24px;
+  font-size: 1.09rem;
   font-style: italic;
 }
 
 .section-1__human {
-  margin: 36px 0;
   display: flex;
   gap: 24px;
 }
@@ -45,11 +28,35 @@
 }
 
 .section-1__human-name {
-  font-size: 18px;
+  font-size: clamp(12px, 0.82rem, 24px);
   font-weight: 500;
 }
 
+.section-1__image {
+  width: 5.921vw;
+  min-width: 60px;
+  height: auto;
+}
+
 .section-1__human-role {
-  font-size: 16px;
+  font-size: clamp(11px, 0.73rem, 24px);
   font-weight: 400;
+}
+
+@media (--min-viewport) {
+  .section-1 {
+    padding: 24px 15px;
+  }
+}
+
+@media (--md-viewport) {
+  .section-1 {
+    padding: clamp(40px, 8vw, 134px) clamp(80px, 30vw, 489px) clamp(50px, 5vw, 99px) clamp(60px, 10vw, 111px);
+  }
+}
+
+@media (--xl-viewport) {
+  .section-1 {
+    padding: 134px 489px 99px 111px;
+  }
 }

@@ -1,4 +1,35 @@
+@custom-media --min-viewport (width >= 1px);
 @custom-media --sm-viewport (width >= 576px);
 @custom-media --md-viewport (width >= 768px);
 @custom-media --lg-viewport (width >= 1024px);
 @custom-media --xl-viewport (width >= 1280px);
+
+@media (width <= 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (--sm-viewport) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (--md-viewport) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (--lg-viewport) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (--xl-viewport) {
+  html {
+    font-size: 22px;
+  }
+}

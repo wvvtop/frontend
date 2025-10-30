@@ -16,6 +16,7 @@ export default [
         document: 'readonly',
         console: 'readonly',
         process: 'readonly',
+        localStorage: 'readonly',
       },
     },
     rules: {},

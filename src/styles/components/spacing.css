@@ -21,3 +21,11 @@
 .u-space-8 {
   margin-top: 8px;
 }
+
+.u-space-31--responsive {
+  margin-top: clamp(15px, 2.5vw, 31px);
+}
+
+.u-space-36--responsive {
+  margin-top: clamp(19px, 2.8vw, 36px);
+}

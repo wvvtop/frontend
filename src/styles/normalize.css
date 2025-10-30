@@ -100,7 +100,6 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; /* 1 */
   /* font-size: 16px; */
-  font-size: clamp(12px, 0.833vw + 8px, 18px); /* 16px - при ширине 1920px */
 }
 
 /**

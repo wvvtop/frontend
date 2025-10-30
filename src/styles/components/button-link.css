@@ -3,17 +3,39 @@
   background-color: var(--color-background-2);
   font-size: 16px;
   padding: 15px 25px;
-  display: inline-flex;
-  align-items: center; /* Выравнивание по вертикали */
-  gap: 10px; /* Расстояние между текстом и стрелкой */
+  display: inline-block;
   border-radius: 1px;
 }
 
-/* Убедитесь, что ссылка тоже использует flex */
 .btn-link a {
   display: flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
   color: inherit;
+}
+
+.btn-link--stacked .btn-link__text {
+  font-size: 14px;
+}
+
+.btn-link--stacked {
+  padding: 5px 20px;
+}
+
+@media (width < 600px) {
+  .btn-link {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .btn-link--stacked {
+    padding: 5px 15px;
+  }
+
+  .btn-link--stacked .btn-link__text {
+    font-size: 12px;
+    display: inline-block;
+    width: min-content;
+  }
 }
