@@ -4,7 +4,7 @@
   margin-top: 10px;
 }
 
-.dot {
+.dots__dot {
   width: 10px;
   height: 10px;
   background-color: #333;
@@ -15,10 +15,10 @@
   cursor: pointer;
 }
 
-.dot:hover {
+.dots__dot:hover {
   transform: scale(1.2);
 }
 
-.dot.active {
+.dots__dot--active {
   background-color: var(--color-links);
 }

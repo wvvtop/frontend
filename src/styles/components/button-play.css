@@ -1,0 +1,16 @@
+.btn-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-play:hover {
+  opacity: 0.8;
+}

@@ -27,5 +27,13 @@
 }
 
 .u-space-36--responsive {
-  margin-top: clamp(19px, 2.8vw, 36px);
+  margin-top: clamp(17px, 2.8vw, 36px);
+}
+
+.u-space-47--responsive {
+  margin-top: clamp(18px, 3.092vw, 47px);
+}
+
+.u-space-50--responsive {
+  margin-top: clamp(19px, 3.289vw, 50px);
 }

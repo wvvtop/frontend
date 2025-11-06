@@ -1,0 +1,17 @@
+.button-navigation__button {
+  border: 0;
+  padding: 0.75rem;
+  background: var(--color-background-1);
+  border-radius: 100%;
+}
+
+.button-navigation {
+  display: flex;
+  gap: 15px;
+}
+
+.button-navigation__arrow-left,
+.button-navigation__arrow-right {
+  height: clamp(12px, 1.454rem, 36px);
+  width: clamp(12px, 1.454rem, 36px);
+}

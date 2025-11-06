@@ -7,7 +7,7 @@
   border-radius: 1px;
 }
 
-.btn-link a {
+.btn-link__a {
   display: flex;
   align-items: center;
   gap: 8px;

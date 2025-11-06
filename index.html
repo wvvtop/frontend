@@ -35,7 +35,7 @@
             <button class="navbar__toggle" aria-label="Меню">☰</button>
             <button id="theme-toggle" class="navbar__theme-toggle">🌙</button>
             <div class="btn-link btn-link--stacked">
-              <a href="">
+              <a class="btn-link__a" href="">
                 <span class="btn-link__text">Book A Meeting</span>
                 <img src="/images/link-arrow-right.svg" alt="" />
               </a>
@@ -51,11 +51,11 @@
           We have created a big library of illustrations with custom style and action types.
         </p>
         <div class="u-space-31--responsive"></div>
-        <em class="section-1__quote">
+        <p class="section-1__quote">
           “E-commerce Illustration Pack collects different ways to do quick shopping, pay in a second, and get all those
           stuff you need. There are smart delivery and polite service in the scenes. Each of them is realized in cold
           and warm colors with”
-        </em>
+        </p>
 
         <div class="u-space-36--responsive"></div>
         <div class="section-1__human">
@@ -67,9 +67,9 @@
         </div>
         <div class="u-space-36--responsive"></div>
 
-        <div class="section-1__btn btn-link">
-          <a href="">
-            Explore More About This
+        <div class="btn-link">
+          <a class="btn-link__a" href="">
+            <span class="btn-link__text">Explore More About This</span>
             <img src="/images/link-arrow-right.svg" alt="" />
           </a>
         </div>
@@ -106,12 +106,9 @@
 
     <section class="section-3">
       <div class="section-3__container">
-        <div class="section-3__photo">
-          <div class="section-3__image image-wrapper">
-            <img src="/images/photo1.svg" alt="фото человека" />
-            <div class="overlay"></div>
-            <p>Video store with 10 samples on 20 min</p>
-          </div>
+        <div class="section-3__image-wrapper">
+          <img class="section-3__image" src="/images/photo1.svg" alt="фото человека" />
+          <p class="section-3__image-text">Video store with 10 samples on 20 min</p>
         </div>
         <div class="section-3__text">
           <header>
@@ -121,9 +118,9 @@
             Nowadays, it isn't uncommon to see lenders rapidly adopting a digital lending strategy to streamline the
             lending process Gorgeous, high-quality design system for mobile, tablet & a few reasons digital
           </p>
-          <button class="section-3__button btn-play">
+          <button class="btn-play">
             <!-- Использование -->
-            <svg width="48" height="48">
+            <svg class="btn-play__icon" width="48" height="48">
               <use href="#icon-play"></use>
             </svg>
             Play Tutorial
@@ -196,32 +193,34 @@
           <h1 class="section-5__title">
             Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline
           </h1>
-          <div class="section-5__buttons button-navigation">
-            <button>
-              <svg width="32" height="32">
+          <div class="button-navigation">
+            <button class="button-navigation__button">
+              <svg class="button-navigation__arrow-left">
                 <use href="#arrow-left"></use>
               </svg>
             </button>
-            <button>
-              <svg width="32" height="32">
+            <button class="button-navigation__button">
+              <svg class="button-navigation__arrow-right">
                 <use href="#arrow-right"></use>
               </svg>
             </button>
           </div>
         </header>
 
-        <div class="section-5__info info">
-          <div>
+        <div class="u-space-50--responsive"></div>
+
+        <div class="section-5__info">
+          <div class="section-5__item">
             <img class="section-5__photo" src="" alt="" />
             <h1 class="section-5__name">Samuel Willson</h1>
             <p class="section-5__role">Digital Artist</p>
           </div>
-          <div>
+          <div class="section-5__item">
             <img class="section-5__photo" src="" alt="" />
             <h1 class="section-5__name">Angelina Hellhop</h1>
             <p class="section-5__role">Digital Artist</p>
           </div>
-          <div>
+          <div class="section-5__item">
             <img class="section-5__photo" src="" alt="" />
             <h1 class="section-5__name">SKyle Generale</h1>
             <p class="section-5__role">Digital Artist</p>
@@ -243,7 +242,14 @@
               <img class="section-6__logo-logitech" src="/images/logitech.svg" alt="logitech" />
               <a class="section-6__link" href="">
                 Read Complete Case Study
-                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  class="section-6__link-icon"
+                  width="20"
+                  height="10"
+                  viewBox="0 0 20 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path d="M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z" fill="#2E4FD7" />
                 </svg>
               </a>
@@ -256,9 +262,9 @@
         </div>
 
         <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dots__dot dots__dot--active"></span>
+          <span class="dots__dot"></span>
+          <span class="dots__dot"></span>
         </div>
       </div>
     </section>
@@ -268,6 +274,9 @@
         <header class="section-7__header">
           <h1 class="section-7__title">How it works</h1>
         </header>
+
+        <div class="u-space-47--responsive"></div>
+
         <div class="section-7__content">
           <div class="section-7__step">
             <img class="section-7__icon" src="/images/section-7_1.svg" alt="" />
@@ -309,9 +318,9 @@
           </p>
         </div>
         <div class="u-space-60"></div>
-        <div class="section-8__button btn-link">
-          <a href="">
-            Book A Meeting
+        <div class="btn-link">
+          <a class="btn-link__a" href="">
+            <span class="btn-link__text">Book A Meeting</span>
             <img src="/images/link-arrow-right.svg" alt="" />
           </a>
         </div>
@@ -319,7 +328,7 @@
         <hr />
         <div class="u-space-50"></div>
 
-        <div class="section-8__companies companies">
+        <div class="section-8__companies">
           <img src="/images/philips.svg" alt="" />
           <img src="/images/logitech.svg" alt="" />
           <img src="/images/amazon.svg" alt="" />
@@ -337,8 +346,8 @@
         </header>
         <div class="u-space-33"></div>
 
-        <div class="footer__main_info">
-          <div class="footer__main_info-left">
+        <div class="footer__main-info">
+          <div class="footer__main-info-left">
             <h1>About Tweakful</h1>
             <div class="u-space-8"></div>
             <p>Tweakful is HubSpot Theme Based On Engagement Design Framework, designed & developed by Openthrive.</p>
@@ -348,7 +357,7 @@
               <img src="/images/link-arrow-right.svg" alt="" style="display: inline-block" />
             </a>
           </div>
-          <div class="footer__main_info-right">
+          <div class="footer__main-info-right">
             <ul class="footer__links-1">
               <li>
                 <a href="">Contact</a>
